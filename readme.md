@@ -5,7 +5,7 @@ Está biblioteca se destina a converter algarismos arábicos para algarimos roma
 ## Como instalar:
 
 ```zsh
-$  npm install labcpf
+$  npm install algarismo
 ```
 
 
