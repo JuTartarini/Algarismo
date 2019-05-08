@@ -69,16 +69,16 @@ function transformRomanToInt(input) {
       input = input.replace(romans[idx], '');
     }
   });   
-  return result;
+  return parseInt(result) ;
 }
 
 function romanToInt(input) {
-  return (compareLength(input.split(''), input.split('').filter(romanValidNumbers))) ? transformRomanToInt(input) : false;
+  return (input.length > 0 && compareLength(input.split(''), input.split('').filter(romanValidNumbers))) ? parseInt(transformRomanToInt(input)) : false;
 }
 
 function intToRoman(input) {
   input = input.toString().replace(/[^0-9]/, '');
-  let number = (parseInt(input) > 3999 ? 'O valor máximo para conversão é 3999' :
+  let number = (parseInt(input) > 3999 && parseInt(input) > 0 ? false :
     input.split('').reverse().map((x, idx) => romanNumerals[idx][x]).reverse().join(''));
   return number;
 }
