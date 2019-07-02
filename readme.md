@@ -1,4 +1,4 @@
-# Converdor números Inteiros para Romanos 
+# Conversor números Inteiros para Romanos 
 
 Está biblioteca se destina a converter algarismos arábicos para algarimos romano, e vice-versa
 
